@@ -42,9 +42,7 @@ functions:
       - http:
           path: note
           method: POST
-          cors:
-            origin: "*"
-            headers: ${self:custom.allowedHeaders}
+
 
 
 
