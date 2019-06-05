@@ -38,10 +38,7 @@ functions:
   add-note:
     handler: api/add-note.handler
     description: POST /note
-    events:
-      - http:
-          path: note
-          method: POST
+
 
 
 
