@@ -46,7 +46,7 @@ functions:
           path: note
           method: POST
           cors:
-            origin: '*'
+            origin: "*"
             headers: ${self:custom.allowedHeaders}
 
   update-note:
@@ -57,7 +57,7 @@ functions:
           path: note
           method: PATCH
           cors:
-            origin: '*'
+            origin: "*"
             headers: ${self:custom.allowedHeaders}
 
 
@@ -69,7 +69,7 @@ functions:
           path: note/n/{note_id}
           method: GET
           cors:
-            origin: '*'
+            origin: "*"
             headers: ${self:custom.allowedHeaders}
 
   delete-note:
@@ -80,7 +80,7 @@ functions:
           path: note/t/{timestamp}
           method: DELETE
           cors:
-            origin: '*'
+            origin: "*"
             headers: ${self:custom.allowedHeaders}
 
 
@@ -92,7 +92,7 @@ functions:
           path: notes
           method: GET
           cors:
-            origin: '*'
+            origin: "*"
             headers: ${self:custom.allowedHeaders}
 
 
