@@ -34,6 +34,19 @@ provider:
         - dynamodb: DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.NOTES_TABLE}"
 
+functions:
+  add-note:
+    handler: api/add-note.handler
+    description: POST /note
+    events:
+      - http:
+          path: note
+          method: POST
+          cors:
+            origin: "*"
+            headers: ${self:custom.allowedHeaders}
+
+
 
 resources:
   Resources:
