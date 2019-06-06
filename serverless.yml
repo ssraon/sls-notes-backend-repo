@@ -2,7 +2,7 @@ service: sls-notes-backend
 
 plugins:
   - serverless-offline
-  - serverless-domain-manager
+ # - serverless-domain-manager
 
 
 custom:
