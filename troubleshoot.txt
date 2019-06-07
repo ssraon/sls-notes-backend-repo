@@ -18,3 +18,5 @@ Serverless: [AWS s3 200 0.051s 0 retries] headObject({ Bucket:
   *** Added AWS Managed Policy : AmazonS3ReadOnlyAccess ***
 
   https://github.com/horike37/serverless-step-functions/issues/146
+
+  sls create_domain
